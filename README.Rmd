@@ -62,14 +62,14 @@ Random forest, a machine learning algorithm, makes a prediction based on numerou
 
 We did this for two combinations of variables: “All Variables” (in situ water quality and GIS variables) or “GIS Only” variables (i.e. no in situ information). For each set of variables, we determined the consensus prediction for chlorophyll a and converted those predictions into four and two trophic state classes (Table 1). For these predicted classifications we calculated a confusion matrix and summary statistics. Using these classes, we estimated the probability that each lake is in a given trophic state.
 
-|=======================|=======================|=====================|
+
 |Trophic State (4 Class)|Trophic State (2 Class)|Concentration Cut-off|
-|=======================|=======================|=====================|
+|:----------------------|:----------------------|:--------------------|
 |Oligotrophic           |Oligo-/Mesotrophic     |<= 2 µg/l            |
 |Mesotrophic            |Oligo-/Mesotrophic     |> 2 – 7 µg/l         |
 |Eutrophic              |Eu-/Hypereutrophic     |> 7 – 30 µg/l        |
 |Hypereutrophic         |Eu-/Hypereutrophic     |> 30 µg/l            |
-|=======================|=======================|=====================|
+
 
 **Table 1. Trophic state classes and chlorophyll a cut-off concentrations**
 
@@ -77,23 +77,22 @@ We did this for two combinations of variables: “All Variables” (in situ wate
 
 The “All Variables” model had an RMSE of 0.09 and R2 of 0.8; whereas, the “GIS Only” model was 0.22 and 0.48 for RMSE and R2, respectively. The classification results are summarized in Table 2.
 
-Model Total Accuracy Kappa
+|Model                            |Total Accuracy |Kappa|
+|:--------------------------------|:--------------|:----|
+|All Variables – 4 Trophic States |69%            |0.57 |
+|All Variables – 2 Trophic States |87%            |0.75 |
+|GIS Variables – 4 Trophic States |49%            |0.29 |
+|GIS Variables – 2 Trophic States |75%            |0.50 |
 
-All Variables – 4 Trophic States 69 % 0.57
-
-All Variables – 2 Trophic States 87 % 0.75
-
-GIS Variables – 4 Trophic States 49 % 0.29
-
-GIS Variables – 2 Trophic States 75 % 0.50
-
-Table 2. Summary of model classification accuracy
+**Table 2. Summary of model classification accuracy**
 
 Examining the “GIS Only” model (i.e., the model that has broadest applicability) we see that in spite of lower overall accuracy, it still has better than even odds (i.e., prediction probability is > 50%) of being correct in more than 1091 of the 1138 lakes included in this model. The “GIS Only” model has tremendous potential for use across the country. This potential exists because the datasets required to parameterize the model are ubiquitous. More importantly though, a prediction of the probability that a lake is in a given class provides an estimate of the uncertainty around that prediction. For example, we can map the probability that any of the 1138 lakes in the “GIS Only” model is oligotrophic (Figure 1) or hypereutrophic (Figure 2). These probabilities provide a strong indicator of the presence of cyanobacteria.
 
-Figure 1. Probability of lake being oligotrophic
+![Figure 1]()
+**Figure 1. Probability of lake being oligotrophic**
 
-Figure 2. Probability of lake being hypereutrophic
+![Figure 2]()
+**Figure 2. Probability of lake being hypereutrophic**
 
 ##Summary
 
@@ -147,16 +146,24 @@ In the sections below we outline the products and communications that deal direc
 
 ##Betty Kreakie
 
+![Betty Pic]()
+
 Betty Kreakie, Ph.D., is a research ecologist for the US Environmental Protection Agency’s Office of Research and Development in Narragansett, Rhode Island. Betty earned her PhD in integrative biology from the University of Texas at Austin, and a Master’s in conservation science/spatial statistics from Duke University’s Nicholas School of the Environment. Her work focuses on the development of spatially explicit, landscape level models that predict how biological populations and communities will respond to anthropogenic influences such as nutrient and contaminant inputs, climate change, and habitat conversion.
 
 ##Jeff Hollister
+
+![Jeff Pic]()
 
 Jeff Hollister is a landscape ecologist with expertise in the spatial component of ecology and environmental sciences. He holds a Bachelor’s degree in Biology from Baker University, a Master’s Degree in Resource Ecology from Duke University, and a Ph. D. in Environmental Science from the University of Rhode Island. Since, May of 2006, he has worked as a Research Ecologist with the US EPA’s Atlantic Ecology Division in Narragansett, RI. His current research focus is on how nutrients drive risk of cyanobacterial blooms in lakes and ponds. A unifying theme to his research is using Open Science (Open Access, Open Source, and Open Data) to benefit environmental science.
 
 ##Bryan Milstead
 
+![Bryan Pic]()
+
 Bryan Milstead is a research ecologist with the US Environmental Protection Agency in Narragansett RI (a long way from his birthplace in Alpine Texas). Before joining the US EPA he worked for the US National Park Service, the Charles Darwin Foundation for the Galapagos Islands, and Northern Illinois University. He has a B.S. from Southwest Missouri State in entomology, a M.S. from the University of Oklahoma in aquatic ecology, and Ph.D. from Northern Illinois University in small mammal ecology. Bryan has worked extensively throughout South and North America and the Caribbean on varied research projects involving a dazzling variety of habitats and organisms. The one theme that holds all his work together is a strong interest in quantitative analysis and data management. He uses the open source R programming environment for most of his work in modeling, statistics, data manipulation, GIS, and graphics. When not sitting in front of a computer, Bryan spends his time, enjoying the company of his family, practicing and teaching yoga, sailing, gardening, and taking care of his ancient dachshund.
 
 ##Farnaz Nojavan
+
+![Farnaz Pic]()
 
 Farnaz Nojavan is an Oak Ridge Institute for Science and Education (ORISE) Postdoctoral Fellow, at the US EPA Atlantic Ecology Division. She is broadly interested in ecological modeling, aquatic ecosystems, Bayesian statistics, risk assessment, and environmental decision analysis. A central theme in her interdisciplinary research is the use of Bayesian statistics to improve inference and prediction. Her current research draws upon Bayesian multilevel modeling and datasets from disparate sources to investigate cyanobacteria distribution, microcystin risk, and changes in the algal community in lakes of the continental United States.
