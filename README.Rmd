@@ -62,17 +62,16 @@ Random forest, a machine learning algorithm, makes a prediction based on numerou
 
 We did this for two combinations of variables: “All Variables” (in situ water quality and GIS variables) or “GIS Only” variables (i.e. no in situ information). For each set of variables, we determined the consensus prediction for chlorophyll a and converted those predictions into four and two trophic state classes (Table 1). For these predicted classifications we calculated a confusion matrix and summary statistics. Using these classes, we estimated the probability that each lake is in a given trophic state.
 
-Trophic State (4 Class) Trophic State (2 Class) Concentration Cut-off
+|=======================|=======================|=====================|
+|Trophic State (4 Class)|Trophic State (2 Class)|Concentration Cut-off|
+|=======================|=======================|=====================|
+|Oligotrophic           |Oligo-/Mesotrophic     |<= 2 µg/l            |
+|Mesotrophic            |Oligo-/Mesotrophic     |> 2 – 7 µg/l         |
+|Eutrophic              |Eu-/Hypereutrophic     |> 7 – 30 µg/l        |
+|Hypereutrophic         |Eu-/Hypereutrophic     |> 30 µg/l            |
+|=======================|=======================|=====================|
 
-Oligotrophic Oligo-/Mesotrophic <= 2 µg/l
-
-Mesotrophic Oligo-/Mesotrophic > 2 – 7 µg/l
-
-Eutrophic Eu-/Hypereutrophic > 7 – 30 µg/l
-
-Hypereutrophic Eu-/Hypereutrophic > 30 µg/l
-
-Table 1. Trophic state classes and chlorophyll a cut-off concentrations
+**Table 1. Trophic state classes and chlorophyll a cut-off concentrations**
 
 ##Results
 
