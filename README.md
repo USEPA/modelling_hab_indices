@@ -129,15 +129,15 @@ In the sections below we outline the products and communications that deal direc
 
 - Hollister, Milstead, Kreakie (2015). LakeTrophicModelling. [Repository](https://github.com/USEPA/LakeTrophicModelling)
 
-- Hollister (2014). lakemorpho: Lake morphometry in R. V1.0. 10.5281/zenodo.16244 [Repository](https://github.com/USEPA/lakemorpho)
+- Hollister (2014). lakemorpho: Lake morphometry in R. V1.0. 10.5281/zenodo.16244. [Repository](https://github.com/USEPA/lakemorpho)
 
 ##Scientific Communications
 
 - Hollister, Milstead, and Kreakie (In Review). Modeling Lake Trophic State: A Data Mining Approach. Submitted to Ecosphere. [Peerj Pre-print](https://peerj.com/preprints/1319/)
 
-- Kreakie, Hollister, Milstead. (In Review). Computational Ecology for Managing Cyanobacteria in Lakes. submitted to LakeLines Magazine. [PDF](http://www.nalms.org/media.acux/beb75c9c-f812-4753-b888-79864899c6d6)
+- Kreakie, Hollister, Milstead. (2015). Computational Ecology for Managing Cyanobacteria in Lakes. LakeLines Magazine. [PDF](http://www.nalms.org/media.acux/beb75c9c-f812-4753-b888-79864899c6d6)
 
-- Milstead, Hollister, Moore, Walker. (2013). Estimating Summer Nutrient Concentrations in Northeastern Lakes from SPARROW Load Predictions and Modeled Hydraulic Residence Time. PLoS ONE 8(11) [Link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0081457)
+- Milstead, Hollister, Moore, Walker. (2013). Estimating Summer Nutrient Concentrations in Northeastern Lakes from SPARROW Load Predictions and Modeled Hydraulic Residence Time. PLoS ONE 8(11). [Link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0081457)
 
 #Contributors
 
