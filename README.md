@@ -5,17 +5,21 @@ date: "September 14, 2015"
 output: pdf_document
 ---
 
-TABLE OF CONTENTS:
+Table Of Contents:
 
-1. [Executive Summary](#Executive_Summary)
-2. Random Forest Approach For Predicting Chlorophyll a in US Lakes
-3. Additional Efforts
-4. Related Products
-    - Presentations and Posters
-    - Blog Posts
-    - Scientific Software
-    - Scientific Communications
-5. Contributors
+1. [Executive Summary](#executive-summary)
+2. [A random forest approach for predicting chlorophyll *a* in U.S. lakes](#a-random-forest-approach-for-predicting-chlorophyll-a-in-u.s.-lakes)
+3. [Additional Efforts]()
+4. [Related Products]()
+    - [Presentations and Posters]()
+    - [Blog Posts]()
+    - [Scientific Software]()
+    - [Scientific Communications]()
+5. [Contributors]()
+    - [Betty J. Kreakie]()
+    - [Jeffrey W. Hollister]()
+    - [W. Bryan Milstead]()
+    - [Farnaz Nojavan]()
 
 #Executive Summary: 
 Despite a lengthy history of research on cyanobacteria, many important questions about this diverse group of aquatic, photosynthetic “blue-green algae” remain unanswered. For example, how can we more accurately predict cyanobacteria blooms in freshwater systems? Which lakes have elevated risks for such blooms? What characteristics mark areas with high risks for cyanobacteria blooms? These are important questions, and our work is an attempt to move us closer to finding answers to some of them.
