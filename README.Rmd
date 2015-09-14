@@ -106,7 +106,7 @@ Our currently implemented random forest models are useful for a wide range of ac
 
 update existing models with new information, something not possible with our current models. This is an especially appealing approach when using the National Lakes Assessment as the models can be updated and improved as new data come in every five years. These efforts are currently ongoing.
 
-#Related Works
+#Related Products
 
 In the sections below we outline the products and communications that deal directly with the various approaches we have used to predict probability of cyanobacteria blooms and related indices.
 
