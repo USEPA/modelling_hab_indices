@@ -16,7 +16,7 @@
     - [W. Bryan Milstead](#w-bryan-milstead)
     - [Farnaz Nojavan](#farnaz-nojavan)
 6. [EPA Disclaimer](#epa-disclaimer)
-7. [PDF Version](predicting_indices.pdf)
+7. [PDF Version](predicting_inidices.pdf)
 
 #Executive Summary: 
 Despite a lengthy history of research on cyanobacteria, many important questions about this diverse group of aquatic, photosynthetic “blue-green algae” remain unanswered. For example, how can we more accurately predict cyanobacteria blooms in freshwater systems? Which lakes have elevated risks for such blooms? What characteristics mark areas with high risks for cyanobacteria blooms? These are important questions, and our work is an attempt to move us closer to finding answers to some of them.
