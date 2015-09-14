@@ -138,6 +138,7 @@ In the sections below we outline the products and communications that deal direc
 - Kreakie, Hollister, Milstead. (In Review). Computational Ecology for Managing Cyanobacteria in Lakes. submitted to LakeLines Magazine. [PDF](http://www.nalms.org/media.acux/beb75c9c-f812-4753-b888-79864899c6d6)
 
 - Milstead, Hollister, Moore, Walker. (2013). Estimating Summer Nutrient Concentrations in Northeastern Lakes from SPARROW Load Predictions and Modeled Hydraulic Residence Time. PLoS ONE 8(11) [Link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0081457)
+
 #Contributors
 
 ##Betty Kreakie
