@@ -1,9 +1,4 @@
----
-title: "Predicting indices of cyanobacteria toxicity and bloom risks in lakes based on nutrient inputs and ecosystem attributes."
-author: "Betty J. Kreakie, Jeffrey W. Hollister, W. Bryan Milstead, Farnaz Nojavan"
-date: "September 14, 2015"
-output: pdf_document
----
+#Predicting indices of cyanobacteria toxicity and bloom risks in lakes based on nutrient inputs and ecosystem attributes
 
 #Table Of Contents:
 
@@ -89,83 +84,74 @@ The “All Variables” model had an RMSE of 0.09 and R2 of 0.8; whereas, the �
 
 Examining the “GIS Only” model (i.e., the model that has broadest applicability) we see that in spite of lower overall accuracy, it still has better than even odds (i.e., prediction probability is > 50%) of being correct in more than 1091 of the 1138 lakes included in this model. The “GIS Only” model has tremendous potential for use across the country. This potential exists because the datasets required to parameterize the model are ubiquitous. More importantly though, a prediction of the probability that a lake is in a given class provides an estimate of the uncertainty around that prediction. For example, we can map the probability that any of the 1138 lakes in the “GIS Only” model is oligotrophic (Figure 1) or hypereutrophic (Figure 2). These probabilities provide a strong indicator of the presence of cyanobacteria.
 
-![Figure 1](/figures/oligo_prob.jpg)
+![Figure 1](figures/oligo_prob.jpg)
 **Figure 1. Probability of lake being oligotrophic**
 
-![Figure 2](/figures/hyper_prob.jpg)
+![Figure 2](figures/hyper_prob.jpg)
 **Figure 2. Probability of lake being hypereutrophic**
 
 ##Summary
 
 Data collected by the EPA and States through the National Lakes Assessment has provided a unique and important glimpse of lake water quality across the nation. Combining this data with other data sets and applying data mining techniques allows us to ask and answer some interesting questions related to indices of cyanobacteria. As expected, in situ water quality measures provide the best predictions (model R2 ~ 0.8), but those models are limited in their application as they require detailed data that are not available for a large number of lakes. Using ubiquitous GIS data to build a model results in a poorer fit (model R2 ~ 0.5). Yet using these models to predict trophic state classification results in accurate predictions 75% of the time, are applicable across the country, and have estimates of the uncertainty of those predictions and have potential for use as indicators of cyanobacteria presence. Thus, the “GIS Only” models are an approach that could have a broad range of applications.
 
-#ADDITIONAL EFFORTS
+#Additional Efforts
 
 Our currently implemented random forest models are useful for a wide range of activities, yet we plan to continue exploring additional approaches for predicting indices of cyanobacteria bloom probability. First, we are looking at using other indices of cyanobacteria blooms. In particular are cyanobacteria abundance, cyanobacteria biovolume, and microcystin (a cyanotoxin) presence or absence. In addition to exploring the use of other modelling endpoints, we are also looking at hierarchical Bayesian models. A major benefit of Bayesian models is that they allow us to
 
 update existing models with new information, something not possible with our current models. This is an especially appealing approach when using the National Lakes Assessment as the models can be updated and improved as new data come in every five years. These efforts are currently ongoing.
 
-#RELATED WORKS
+#Related Works
 
 In the sections below we outline the products and communications that deal directly with the various approaches we have used to predict probability of cyanobacteria blooms and related indices.
 
-##Presentations and Posters:
+##Presentations and Posters
 
-- Hollister, Milstead, Kreakie. Expanding Models of Lake Trophic State to Predict Cyanobacteria in Lakes: A Data Mining Approach. 99th Annual Ecological Society of America Annual Meeting, Sacramento, CA. August 2014. [http://f1000research.com/posters/1096851]
+- Hollister, Milstead, Kreakie. Expanding Models of Lake Trophic State to Predict Cyanobacteria in Lakes: A Data Mining Approach. 99th Annual Ecological Society of America Annual Meeting, Sacramento, CA. August 2014. [Poster](http://f1000research.com/posters/1096851)
 
-- Kreakie, Nojavan, Hollister (2014) When Green Goes Bad: A Computational Ecology Approach to a Better Understanding of Cyanobacteria, Nutrients, and Lakes. US EPA Office of Wetlands, Oceans, and Watersheds (OWOW) Cyanobacteria webinar series.
+- Kreakie, Nojavan, Hollister (2014) When Green Goes Bad: A Computational Ecology Approach to a Better Understanding of Cyanobacteria, Nutrients, and Lakes. US EPA Office of Wetlands, Oceans, and Watersheds (OWOW) Cyanobacteria webinar series. [Slides](http://cfpub.epa.gov/si/si_public_file_download.cfm?p_download_id=520712)
 
-- Kreakie, Milstead, Hollister (2014) When Green Goes Bad: An Interdisciplinary Approach to Better Understand Cyanobacteria, Nutrients, and Lakes. US EPA Safe and Sustainable Waters Research program Webinar Series.
+- Kreakie, Milstead, Hollister (2014) When Green Goes Bad: An Interdisciplinary Approach to Better Understand Cyanobacteria, Nutrients, and Lakes. US EPA Safe and Sustainable Waters Research program Webinar Series. [Abstract](http://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=282620&keyword=&actType=&TIMSType=+&TIMSSubTypeID=&DEID=&epaNumber=&ntisID=&archiveStatus=Both&ombCat=Any&dateBeginCreated=&dateEndCreated=&dateBeginPublishedPresented=&dateEndPublishedPresented=&dateBeginUpdated=&dateEndUpdated=&dateBeginCompleted=&dateEndCompleted=&personID=74607&role=Any&journalID=&publisherID=&sortBy=title&count=25&CFID=40937551&CFTOKEN=84624132)
 
-- Kreakie, Milstead, Hollister (2014) Combined Influence of Landscape Composition and Nutrient Inputs on Lake Trophic Structure. US Chapter of the International Association for Landscape Ecology Annual Meeting. Anchorage, AK.[Link to SI Abstract]
+- Kreakie, Milstead, Hollister (2014) Combined Influence of Landscape Composition and Nutrient Inputs on Lake Trophic Structure. US Chapter of the International Association for Landscape Ecology Annual Meeting. Anchorage, AK.[Abstract](http://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=279535&keyword=&actType=&TIMSType=+&TIMSSubTypeID=&DEID=&epaNumber=&ntisID=&archiveStatus=Both&ombCat=Any&dateBeginCreated=&dateEndCreated=&dateBeginPublishedPresented=&dateEndPublishedPresented=&dateBeginUpdated=&dateEndUpdated=&dateBeginCompleted=&dateEndCompleted=&personID=74607&role=Any&journalID=&publisherID=&sortBy=title&count=25&CFID=40937551&CFTOKEN=84624132)
 
-- Nojavan, F., B. J. Kreakie. A Bayesian Multilevel Model for Microcystin Prediction in the Continental United States Lakes. 2015 Society for Freshwater Science (SFS) Annual Meeting, Milwaukee, WI May 2015.
+- Nojavan, F., B. J. Kreakie. A Bayesian Multilevel Model for Microcystin Prediction in the Continental United States Lakes. 2015 Society for Freshwater Science (SFS) Annual Meeting, Milwaukee, WI May 2015. [Abstract](http://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=308374&keyword=&actType=&TIMSType=+&TIMSSubTypeID=&DEID=&epaNumber=&ntisID=&archiveStatus=Both&ombCat=Any&dateBeginCreated=&dateEndCreated=&dateBeginPublishedPresented=&dateEndPublishedPresented=&dateBeginUpdated=&dateEndUpdated=&dateBeginCompleted=&dateEndCompleted=&personID=74607&role=Any&journalID=&publisherID=&sortBy=title&count=25&CFID=40937551&CFTOKEN=84624132)
 
-##Blog Posts:
+##Blog Posts
 
-- Hollister, Kreakie, Milstead. (2014). Opening our Science: Open Science and Cyanobacterial Research at EPA. US EPA It All Starts with Science Blog. [https://blog.epa.gov/blog/2014/06/open-science-and-cyanobacterial-research-at-epa/]
+- Hollister, Kreakie, Milstead. (2014). Opening our Science: Open Science and Cyanobacterial Research at EPA. US EPA It All Starts with Science Blog. [Blog Post](https://blog.epa.gov/blog/2014/06/open-science-and-cyanobacterial-research-at-epa/)
 
-- Kreakie, Hollister, Milstead (2014). Modeling Cyanobacteria Ecology to Keep Harmful Algal Blooms at Bay. US EPA It All Starts with Science Blog. [https://blog.epa.gov/blog/2014/06/modeling-cyanobacteria-ecology-to-keep-harmful-algal-blooms-at-bay/]
+- Kreakie, Hollister, Milstead (2014). Modeling Cyanobacteria Ecology to Keep Harmful Algal Blooms at Bay. US EPA It All Starts with Science Blog. [Blog Post](https://blog.epa.gov/blog/2014/06/modeling-cyanobacteria-ecology-to-keep-harmful-algal-blooms-at-bay/)
 
-- Hollister, Milstead. (2013). SPARROWs, Lakes, and Nutrients? US EPA It All Starts with Science Blog. [https://blog.epa.gov/blog/2013/12/sparrows-lakes-and-nutrients/?utm_source=rss&utm_medium=rss&utm_campaign=sparrows-lakes-and-nutrients]
+- Hollister, Milstead. (2013). SPARROWs, Lakes, and Nutrients? US EPA It All Starts with Science Blog. [Blog Post](https://blog.epa.gov/blog/2013/12/sparrows-lakes-and-nutrients/?utm_source=rss&utm_medium=rss&utm_campaign=sparrows-lakes-and-nutrients)
 
-##Scientific Software:
+##Scientific Software
 
-- Hollister, Milstead, Kreakie (2015). LakeTrophicModelling. https://github.com/USEPA/LakeTrophicModelling
+- Hollister, Milstead, Kreakie (2015). LakeTrophicModelling. [Repository](https://github.com/USEPA/LakeTrophicModelling)
 
-- Hollister (2014). lakemorpho: Lake morphometry in R. V1.0. 10.5281/zenodo.16244
+- Hollister (2014). lakemorpho: Lake morphometry in R. V1.0. 10.5281/zenodo.16244 [Repository](https://github.com/USEPA/lakemorpho)
 
-##Scientific Communications:
+##Scientific Communications
 
-- Hollister, Milstead, and Kreakie (In Review). Modeling Lake Trophic State: A Data Mining Approach. Submitted to Ecosphere. Link to Peerj Pre-print.
+- Hollister, Milstead, and Kreakie (In Review). Modeling Lake Trophic State: A Data Mining Approach. Submitted to Ecosphere. [Peerj Pre-print](https://peerj.com/preprints/1319/)
 
-- Kreakie, Hollister, Milstead. (In Review). Computational Ecology for Managing Cyanobacteria in Lakes. submitted to LakeLines Magazine.
+- Kreakie, Hollister, Milstead. (In Review). Computational Ecology for Managing Cyanobacteria in Lakes. submitted to LakeLines Magazine. [PDF](http://www.nalms.org/media.acux/beb75c9c-f812-4753-b888-79864899c6d6)
 
-- Milstead, Hollister, Moore, Walker. (2013). Estimating Summer Nutrient Concentrations in Northeastern Lakes from SPARROW Load Predictions and Modeled Hydraulic Residence Time. PLoS ONE 8(11) [http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0081457]
-
-#CONTRIBUTORS:
+- Milstead, Hollister, Moore, Walker. (2013). Estimating Summer Nutrient Concentrations in Northeastern Lakes from SPARROW Load Predictions and Modeled Hydraulic Residence Time. PLoS ONE 8(11) [Link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0081457)
+#Contributors
 
 ##Betty Kreakie
-
-![Betty Pic]()
 
 Betty Kreakie, Ph.D., is a research ecologist for the US Environmental Protection Agency’s Office of Research and Development in Narragansett, Rhode Island. Betty earned her PhD in integrative biology from the University of Texas at Austin, and a Master’s in conservation science/spatial statistics from Duke University’s Nicholas School of the Environment. Her work focuses on the development of spatially explicit, landscape level models that predict how biological populations and communities will respond to anthropogenic influences such as nutrient and contaminant inputs, climate change, and habitat conversion.
 
 ##Jeff Hollister
 
-![Jeff Pic]()
-
 Jeff Hollister is a landscape ecologist with expertise in the spatial component of ecology and environmental sciences. He holds a Bachelor’s degree in Biology from Baker University, a Master’s Degree in Resource Ecology from Duke University, and a Ph. D. in Environmental Science from the University of Rhode Island. Since, May of 2006, he has worked as a Research Ecologist with the US EPA’s Atlantic Ecology Division in Narragansett, RI. His current research focus is on how nutrients drive risk of cyanobacterial blooms in lakes and ponds. A unifying theme to his research is using Open Science (Open Access, Open Source, and Open Data) to benefit environmental science.
 
 ##Bryan Milstead
 
-![Bryan Pic]()
-
 Bryan Milstead is a research ecologist with the US Environmental Protection Agency in Narragansett RI (a long way from his birthplace in Alpine Texas). Before joining the US EPA he worked for the US National Park Service, the Charles Darwin Foundation for the Galapagos Islands, and Northern Illinois University. He has a B.S. from Southwest Missouri State in entomology, a M.S. from the University of Oklahoma in aquatic ecology, and Ph.D. from Northern Illinois University in small mammal ecology. Bryan has worked extensively throughout South and North America and the Caribbean on varied research projects involving a dazzling variety of habitats and organisms. The one theme that holds all his work together is a strong interest in quantitative analysis and data management. He uses the open source R programming environment for most of his work in modeling, statistics, data manipulation, GIS, and graphics. When not sitting in front of a computer, Bryan spends his time, enjoying the company of his family, practicing and teaching yoga, sailing, gardening, and taking care of his ancient dachshund.
 
 ##Farnaz Nojavan
-
-![Farnaz Pic]()
 
 Farnaz Nojavan is an Oak Ridge Institute for Science and Education (ORISE) Postdoctoral Fellow, at the US EPA Atlantic Ecology Division. She is broadly interested in ecological modeling, aquatic ecosystems, Bayesian statistics, risk assessment, and environmental decision analysis. A central theme in her interdisciplinary research is the use of Bayesian statistics to improve inference and prediction. Her current research draws upon Bayesian multilevel modeling and datasets from disparate sources to investigate cyanobacteria distribution, microcystin risk, and changes in the algal community in lakes of the continental United States.
 
