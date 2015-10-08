@@ -1,4 +1,9 @@
-#Predicting indices of cyanobacteria toxicity and bloom risks in lakes based on nutrient inputs and ecosystem attributes
+---
+title: "Predicting related indices of cyanobacteria blooms in lakes based on nutrient inputs and ecosystem attributes."
+author: "Betty J. Kreakie, Jeffrey W. Hollister, W. Bryan Milstead, Farnaz Nojavan"
+date: "September 14, 2015"
+output: pdf_document
+---
 
 #Table Of Contents:
 
@@ -55,7 +60,7 @@ Modelling lakes across broad regions requires synthesis of data from a variety o
 
 Random forest, a machine learning algorithm, makes a prediction based on numerous decision or regression trees. Both the sample data and predictor variables are randomly selected for each tree. To ease interpretation of the final models, we used a variable selection algorithm to pare down the total number of variables into a reduced model. The final random forest is calculated from the reduced model.
 
-We did this for two combinations of variables: “All Variables” (in situ water quality and GIS variables) or “GIS Only” variables (i.e. no in situ information). For each set of variables, we determined the consensus prediction for chlorophyll a and converted those predictions into four and two trophic state classes (Table 1). For these predicted classifications we calculated a confusion matrix and summary statistics. Using these classes, we estimated the probability that each lake is in a given trophic state.
+We did this for two combinations of variables: “All Variables” (in situ water quality and GIS variables) or “GIS Only” variables (i.e. no in situ information). For each set of variables, we determined the consensus prediction for chlorophyll a and converted those predictions into four and two trophic state classes (Table 1).  These trophic state classifications were taken from the 2007 National Lakes Assessment report. For these predicted classifications we calculated a confusion matrix and summary statistics. Using these classes, we estimated the probability that each lake is in a given trophic state.
 
 
 |Trophic State (4 Class)|Trophic State (2 Class)|Concentration Cut-off|
@@ -92,6 +97,10 @@ Examining the “GIS Only” model (i.e., the model that has broadest applicabil
 ##Summary
 
 Data collected by the EPA and States through the National Lakes Assessment has provided a unique and important glimpse of lake water quality across the nation. Combining this data with other data sets and applying data mining techniques allows us to ask and answer some interesting questions related to indices of cyanobacteria. As expected, in situ water quality measures provide the best predictions (model R2 ~ 0.8), but those models are limited in their application as they require detailed data that are not available for a large number of lakes. Using ubiquitous GIS data to build a model results in a poorer fit (model R2 ~ 0.5). Yet using these models to predict trophic state classification results in accurate predictions 75% of the time, are applicable across the country, and have estimates of the uncertainty of those predictions and have potential for use as indicators of cyanobacteria presence. Thus, the “GIS Only” models are an approach that could have a broad range of applications.
+
+##Caveats
+
+While these approaches have broad applicability, the specific models we describe are subject to a few caveats.  First, the data used to develop the models applies to lakes that are a part of the 2007 NLA sample frame.  That sample frame did not include Alaska, Hawaii, or the Great Lakes and thus our models are not able to predict in those areas.  Additional data would be required to expand our models to cover these additional regions.  Second,  using chlorophyll *a* and trophic state as a proxy for cyanobacteria blooms relies on the relationship between increased trophic state and bloom occurrence.  This does not suggest that presence or abundance of cyanobacteria taxa are linearly related to chlorophyll *a*.  The probabilities of predicted trophic state should account for this and lakes that may have many cyanobacteria taxa present at relatively high abundances but not be in a bloom state would be predicted at lower probabilities.
 
 #Additional Efforts
 
